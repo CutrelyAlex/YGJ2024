@@ -46,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Art_Charter_Car_Running_Animation_Yellow_0: -3334317047240539870
+      Art_Charter_Car_Running_Animation_Yellow_1: 4719439765027455452
+      Art_Charter_Car_Running_Animation_Yellow_2: 1374841403020610796
+      Art_Charter_Car_Running_Animation_Yellow_3: 6627397552569256176
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
