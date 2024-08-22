@@ -15,9 +15,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Jump",
+                    "name": "Brake",
                     "type": "Button",
                     "id": "212cceb6-6f82-46ed-b5e3-7e95d9d70330",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Engine",
+                    "type": "Button",
+                    "id": "ab2fe75e-9891-495a-9305-0c46c681a400",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -59,17 +68,6 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "left",
-                    "id": "e879df62-e3f1-4b3d-b86e-5ea87ad77360",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "right",
                     "id": "9bff5084-b9e8-4fcb-b978-9872bf21e17c",
                     "path": "<Keyboard>/d",
@@ -87,7 +85,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Jump",
+                    "action": "Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2df17c2c-dce7-4bbd-8e72-17080e7852c8",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Engine",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
