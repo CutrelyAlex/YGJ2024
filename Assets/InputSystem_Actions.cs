@@ -45,6 +45,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Engine"",
+                    ""type"": ""Button"",
+                    ""id"": ""ab2fe75e-9891-495a-9305-0c46c681a400"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -100,6 +109,17 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Brake"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2df17c2c-dce7-4bbd-8e72-17080e7852c8"",
+                    ""path"": ""<Keyboard>/g"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Engine"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -173,6 +193,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Gameplay = asset.FindActionMap("Gameplay", throwIfNotFound: true);
         m_Gameplay_Move = m_Gameplay.FindAction("Move", throwIfNotFound: true);
         m_Gameplay_Brake = m_Gameplay.FindAction("Brake", throwIfNotFound: true);
+        m_Gameplay_Engine = m_Gameplay.FindAction("Engine", throwIfNotFound: true);
     }
 
     ~@InputSystem_Actions()
@@ -241,12 +262,14 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private List<IGameplayActions> m_GameplayActionsCallbackInterfaces = new List<IGameplayActions>();
     private readonly InputAction m_Gameplay_Move;
     private readonly InputAction m_Gameplay_Brake;
+    private readonly InputAction m_Gameplay_Engine;
     public struct GameplayActions
     {
         private @InputSystem_Actions m_Wrapper;
         public GameplayActions(@InputSystem_Actions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Gameplay_Move;
         public InputAction @Brake => m_Wrapper.m_Gameplay_Brake;
+        public InputAction @Engine => m_Wrapper.m_Gameplay_Engine;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -262,6 +285,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Brake.started += instance.OnBrake;
             @Brake.performed += instance.OnBrake;
             @Brake.canceled += instance.OnBrake;
+            @Engine.started += instance.OnEngine;
+            @Engine.performed += instance.OnEngine;
+            @Engine.canceled += instance.OnEngine;
         }
 
         private void UnregisterCallbacks(IGameplayActions instance)
@@ -272,6 +298,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Brake.started -= instance.OnBrake;
             @Brake.performed -= instance.OnBrake;
             @Brake.canceled -= instance.OnBrake;
+            @Engine.started -= instance.OnEngine;
+            @Engine.performed -= instance.OnEngine;
+            @Engine.canceled -= instance.OnEngine;
         }
 
         public void RemoveCallbacks(IGameplayActions instance)
@@ -338,5 +367,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnBrake(InputAction.CallbackContext context);
+        void OnEngine(InputAction.CallbackContext context);
     }
 }

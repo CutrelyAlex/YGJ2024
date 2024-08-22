@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
     InputSystem_Actions action;
     Vector2 moveDirection;
 
-    public bool engineOn = true;
+    public bool engineOn;
     public bool stoping;
     public bool speeding;
     public float acceleration; // X轴加速度
@@ -29,25 +29,53 @@ public class Movement : MonoBehaviour
         // 移动输入处理（油门）
         action.Gameplay.Move.performed += context =>
         {
-            speeding = true;
-            moveDirection = context.ReadValue<Vector2>();
+            if (engineOn)
+            {
+                speeding = true;
+                moveDirection = context.ReadValue<Vector2>();
+            }
         };
 
         action.Gameplay.Move.canceled += context =>
         {
-            speeding = false;
-            moveDirection = Vector2.zero;
+            if (engineOn)
+            {
+                speeding = false;
+                moveDirection = Vector2.zero;
+            }
         };
 
         // 刹车输入处理
         action.Gameplay.Brake.performed += context =>
         {
-            stoping = true;
+            if (engineOn)
+            {
+                stoping = true;
+            }
         };
 
         action.Gameplay.Brake.canceled += context =>
         {
-            stoping = false;
+            if (engineOn)
+            {
+                stoping = false;
+            }
+        };
+
+        // 油门启动
+        action.Gameplay.Engine.performed += context =>
+        {
+            if(engineOn)
+            {
+                engineOn = false;
+                stoping = true;
+                speeding = false ;
+            }
+            else
+            {
+                engineOn = true;
+                stoping = false;
+            }
         };
 
         action.Enable();
@@ -55,10 +83,7 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (engineOn)
-        {
-            CarMove();
-        }
+        CarMove();
     }
 
     void CarMove()
@@ -66,7 +91,7 @@ public class Movement : MonoBehaviour
         Vector2 newVelocity = currentVector;
 
         // X轴加速或减速逻辑
-        if (speeding)
+        if (speeding && engineOn)
         {
             targetVector.x = moveDirection.x * maxSpeed;
             newVelocity.x = Mathf.Lerp(currentVector.x, targetVector.x, acceleration * Time.fixedDeltaTime);
