@@ -103,8 +103,8 @@ public class Movement : MonoBehaviour
         }
 
         // Y轴加速逻辑
-        targetVector.y = moveDirection.y * maxSpeed;
-        newVelocity.y = Mathf.Lerp(currentVector.y, targetVector.y, Yacceleration * Time.fixedDeltaTime);
+        // targetVector.y = moveDirection.y * maxSpeed;
+        //  newVelocity.y = Mathf.Lerp(currentVector.y, targetVector.y, Yacceleration * Time.fixedDeltaTime);
 
         // 更新当前速度
         currentVector = newVelocity;
