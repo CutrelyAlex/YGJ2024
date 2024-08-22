@@ -19,10 +19,22 @@ public class CarModel : MonoBehaviour
 
     void LightUpdate()
     {
-        if (movement.braking && movement.engineOn) BackLight.intensity = backLightIntensity;
-        else BackLight.intensity = 0.1f;
+        if (movement.braking && movement.engineOn)
+        {
+            BackLight.intensity = backLightIntensity;
+        }
+        else
+        {
+            BackLight.intensity = 0.1f;
+        }
 
-        if (movement.engineOn) FrontLight.intensity = frontLightIntensity;
-        else frontLightIntensity = 0.1f;
+        if (movement.engineOn)
+        {
+            FrontLight.intensity = frontLightIntensity;
+        }
+        else
+        {
+            FrontLight.intensity = 0.1f;
+        }
     }
 }
