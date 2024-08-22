@@ -11,7 +11,6 @@ public class Movement : MonoBehaviour
     public bool speeding;
     public float acceleration; // X轴加速度
     public float stopAcceleration; // X轴减速度
-    public float Yacceleration; // Y轴加速度
     public float maxSpeed;
     public Vector2 currentVector;
     public Vector2 targetVector;
@@ -93,18 +92,17 @@ public class Movement : MonoBehaviour
         // X轴加速或减速逻辑
         if (speeding && engineOn)
         {
-            targetVector.x = moveDirection.x * maxSpeed;
-            newVelocity.x = Mathf.Lerp(currentVector.x, targetVector.x, acceleration * Time.fixedDeltaTime);
+            // 根据车头方向计算加速度方向
+            Vector2 forwardDirection = transform.right; // 使用车头方向
+            targetVector = forwardDirection * moveDirection.x * maxSpeed;
+            newVelocity = Vector2.Lerp(currentVector, targetVector, acceleration * Time.fixedDeltaTime);
         }
+
 
         if (stoping)
         {
             newVelocity.x = Mathf.Lerp(newVelocity.x, 0, stopAcceleration * Time.fixedDeltaTime);
         }
-
-        // Y轴加速逻辑
-        // targetVector.y = moveDirection.y * maxSpeed;
-        //  newVelocity.y = Mathf.Lerp(currentVector.y, targetVector.y, Yacceleration * Time.fixedDeltaTime);
 
         // 更新当前速度
         currentVector = newVelocity;
