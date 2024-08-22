@@ -7,6 +7,7 @@ public class Movement : MonoBehaviour
     Vector2 moveDirection;
 
     public bool engineOn;
+    public bool braking;
     public bool stoping;
     public bool speeding;
     public float acceleration; // X轴加速度
@@ -50,6 +51,7 @@ public class Movement : MonoBehaviour
             if (engineOn)
             {
                 stoping = true;
+                braking = true;
             }
         };
 
@@ -58,6 +60,7 @@ public class Movement : MonoBehaviour
             if (engineOn)
             {
                 stoping = false;
+                braking = false;
             }
         };
 
