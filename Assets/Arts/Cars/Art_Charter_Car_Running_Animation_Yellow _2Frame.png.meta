@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 28362291d2183324abb5d120582e5ca2
+guid: b6851bab514e86c429dbe09f55a60dd5
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -8,18 +8,6 @@ TextureImporter:
   - first:
       213: -7305353352019444968
     second: Art_Charter_Car_Running_Animation_Yellow 1_1
-  - first:
-      213: -3353959154540415901
-    second: Art_Charter_Car_Running_Animation_Yellow 1_2
-  - first:
-      213: -6422423648055590829
-    second: Art_Charter_Car_Running_Animation_Yellow 1_3
-  - first:
-      213: -8761517351284796532
-    second: Art_Charter_Car_Running_Animation_Yellow 1_4
-  - first:
-      213: 5301224515974127020
-    second: Art_Charter_Car_Running_Animation_Yellow 1_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -158,94 +146,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Art_Charter_Car_Running_Animation_Yellow 1_2
-      rect:
-        serializedVersion: 2
-        x: 154
-        y: 2
-        width: 52
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 364f2724be75471d0800000000000000
-      internalID: -3353959154540415901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Art_Charter_Car_Running_Animation_Yellow 1_3
-      rect:
-        serializedVersion: 2
-        x: 226
-        y: 2
-        width: 52
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 350049438b7fed6a0800000000000000
-      internalID: -6422423648055590829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Art_Charter_Car_Running_Animation_Yellow 1_4
-      rect:
-        serializedVersion: 2
-        x: 298
-        y: 2
-        width: 52
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c839f37b366d86680800000000000000
-      internalID: -8761517351284796532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Art_Charter_Car_Running_Animation_Yellow 1_5
-      rect:
-        serializedVersion: 2
-        x: 370
-        y: 2
-        width: 52
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cadda353c9bb19940800000000000000
-      internalID: 5301224515974127020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -262,10 +162,6 @@ TextureImporter:
     nameFileIdTable:
       Art_Charter_Car_Running_Animation_Yellow 1_0: 3481383719953080459
       Art_Charter_Car_Running_Animation_Yellow 1_1: -7305353352019444968
-      Art_Charter_Car_Running_Animation_Yellow 1_2: -3353959154540415901
-      Art_Charter_Car_Running_Animation_Yellow 1_3: -6422423648055590829
-      Art_Charter_Car_Running_Animation_Yellow 1_4: -8761517351284796532
-      Art_Charter_Car_Running_Animation_Yellow 1_5: 5301224515974127020
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
