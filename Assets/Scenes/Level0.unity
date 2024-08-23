@@ -5462,7 +5462,7 @@ PrefabInstance:
     - target: {fileID: 2993142578853122280, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 6e9e5a7e5bdc7c047bf2d3c18c897015, type: 2}
+      objectReference: {fileID: 11400000, guid: a5b56c1807f549e4f98f145cf50c133d, type: 2}
     - target: {fileID: 2993142578853122280, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_fontStyle
       value: 1
@@ -5494,7 +5494,7 @@ PrefabInstance:
     - target: {fileID: 2993142578853122280, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 6914280057374206890, guid: 6e9e5a7e5bdc7c047bf2d3c18c897015, type: 2}
+      objectReference: {fileID: 6120278715360946079, guid: a5b56c1807f549e4f98f145cf50c133d, type: 2}
     - target: {fileID: 2993142578853122280, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_TextWrappingMode
       value: 1
