@@ -117,6 +117,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -309,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Art_Autumn_DogFriend_0: 6995561060700578238
+      Art_Autumn_DogFriend_1: 4235736566565886240
+      Art_Autumn_DogFriend_2: 916696877403425421
+      Art_Autumn_DogFriend_3: -5610221829773473433
+      Art_Autumn_DogFriend_4: 7713517709403181372
+      Art_Autumn_DogFriend_5: 8819070665745264785
+      Art_Autumn_DogFriend_6: -7886740720736545598
+      Art_Autumn_DogFriend_7: 7805756209627322171
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

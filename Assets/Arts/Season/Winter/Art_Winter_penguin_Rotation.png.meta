@@ -150,6 +150,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -584,7 +597,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Art_Winter_penguin_Rotation_0: -2804595599819844134
+      Art_Winter_penguin_Rotation_1: -3511989560811843959
+      Art_Winter_penguin_Rotation_10: -5666022317277081201
+      Art_Winter_penguin_Rotation_11: -2678105222214957138
+      Art_Winter_penguin_Rotation_12: 5392942918469077219
+      Art_Winter_penguin_Rotation_13: -339332473035518461
+      Art_Winter_penguin_Rotation_14: 3347094012270207057
+      Art_Winter_penguin_Rotation_15: -8339254845533116336
+      Art_Winter_penguin_Rotation_16: -1690043000100094830
+      Art_Winter_penguin_Rotation_17: -659224194113261870
+      Art_Winter_penguin_Rotation_18: -1421605927673495569
+      Art_Winter_penguin_Rotation_2: 3411430137674729892
+      Art_Winter_penguin_Rotation_3: -8447047695317235750
+      Art_Winter_penguin_Rotation_4: 5944129642553162665
+      Art_Winter_penguin_Rotation_5: -6445653152060761299
+      Art_Winter_penguin_Rotation_6: 876140991673373050
+      Art_Winter_penguin_Rotation_7: 3271302850048960326
+      Art_Winter_penguin_Rotation_8: -123045568907900737
+      Art_Winter_penguin_Rotation_9: -5005467498288125334
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
