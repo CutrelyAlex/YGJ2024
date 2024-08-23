@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3888473205043269595}
-  - component: {fileID: 637191341614000411}
   - component: {fileID: 3612746851576060886}
+  - component: {fileID: 8568491462867908276}
   m_Layer: 0
   m_Name: GuideSystem
   m_TagString: Untagged
@@ -33,27 +33,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &637191341614000411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8568930475347235883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a397a03464a6c94f9aa92ede7350c4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cardMovement: {fileID: 0}
-  GuideCount: 0
-  guideTextsList:
-  - "\u6309G\u542F\u52A8\u53D1\u52A8\u673A"
-  - "\u6309D\u5411\u53F3\u53D1\u8F66"
-  - "\u6309\u7A7A\u683C\u5239\u8F66"
-  - "\u7528\u9F20\u6807\u4E0E\u6CBF\u9014\u7684\u7269\u54C1\u4EA4\u4E92"
-  guidTextUGUI: {fileID: 0}
-  Level0: 1
 --- !u!114 &3612746851576060886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,3 +46,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typingSpeed: 0.05
+--- !u!114 &8568491462867908276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8568930475347235883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f805d667f6ef8d147a282fce859bdc4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guideText: 
+  guidTextUGUI: {fileID: 0}

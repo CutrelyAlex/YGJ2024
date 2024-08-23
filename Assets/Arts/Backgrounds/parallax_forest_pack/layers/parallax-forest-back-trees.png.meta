@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2689d786424c58e4b8efb79d298ec00e
+guid: 0a1dce68ad7eb8040a61d521b37dafda
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3402816046540829602
-    second: well_0
+      213: 1623158659035209338
+    second: parallax-forest-back-trees_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: well_0
+      name: parallax-forest-back-trees_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 65
-        height: 65
+        width: 272
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5c4fe5a5d4c6c0d0800000000000000
-      internalID: -3402816046540829602
+      spriteID: a7e94e5533e968610800000000000000
+      internalID: 1623158659035209338
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      well_0: -3402816046540829602
+      parallax-forest-back-trees_0: 1623158659035209338
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

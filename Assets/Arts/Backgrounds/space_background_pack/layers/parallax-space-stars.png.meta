@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 2689d786424c58e4b8efb79d298ec00e
+guid: 65d8359664af3a34ebee5aebad9331e2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3402816046540829602
-    second: well_0
+      213: 400921901720316324
+    second: parallax-space-stars_0
+  - first:
+      213: -157596472077985052
+    second: parallax-space-stars_1
+  - first:
+      213: -3085869884878691818
+    second: parallax-space-stars_2
+  - first:
+      213: 9037970099097532956
+    second: parallax-space-stars_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: well_0
+      name: parallax-space-stars_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 65
-        height: 65
+        x: 1
+        y: 12
+        width: 117
+        height: 131
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5c4fe5a5d4c6c0d0800000000000000
-      internalID: -3402816046540829602
+      spriteID: 4a9a6be685c509500800000000000000
+      internalID: 400921901720316324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax-space-stars_1
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 15
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eadfe7f7da10ddf0800000000000000
+      internalID: -157596472077985052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax-space-stars_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 2
+        width: 91
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612eab870b9cc25d0800000000000000
+      internalID: -3085869884878691818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax-space-stars_3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 12
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a7f4f7be15d6d70800000000000000
+      internalID: 9037970099097532956
       vertices: []
       indices: 
       edges: []
@@ -147,8 +222,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      well_0: -3402816046540829602
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2689d786424c58e4b8efb79d298ec00e
+guid: 47280a5bf58ec5140a624bbbc633b56e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3402816046540829602
-    second: well_0
+      213: 505693432964485445
+    second: parallax-space-big-planet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: well_0
+      name: parallax-space-big-planet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 65
-        height: 65
+        width: 88
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5c4fe5a5d4c6c0d0800000000000000
-      internalID: -3402816046540829602
+      spriteID: 541981d7f75940700800000000000000
+      internalID: 505693432964485445
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      well_0: -3402816046540829602
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
