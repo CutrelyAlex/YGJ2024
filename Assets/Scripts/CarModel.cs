@@ -1,18 +1,40 @@
+using System;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
-public class CarModel : MonoBehaviour
+public class CarModel : Singleton<CarModel>
 {
+    Animator animator;
     public Light2D BackLight;
     public Light2D FrontLight;
     public float backLightIntensity;
     public float frontLightIntensity;
-    private void Awake()
+
+    public bool apple = false;
+    public GameObject objApple;
+
+    protected override void Awake()
     {
+        base.Awake();
     }
+
+    private void Start()
+    {
+        objApple.SetActive(false);
+    }
+
     private void Update()
     {
         LightUpdate();
+        ModelUpdate();
+    }
+
+    private void ModelUpdate()
+    {
+        if(apple)
+        {
+            objApple.SetActive(true);
+        }
     }
 
     void LightUpdate()
