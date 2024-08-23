@@ -14795,7 +14795,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 6.649048, y: 2.3559647}
+  m_Offset: {x: -57.71768, y: 2.3559647}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -14805,7 +14805,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 148.32617, y: 2.1517944}
+  m_Size: {x: 277.05963, y: 2.1517944}
   m_EdgeRadius: 0
 --- !u!114 &1844113000
 MonoBehaviour:
@@ -16598,6 +16598,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -3334317047240539870, guid: 62ae077ab393a654d870cb0501bbe29d, type: 3}
+    - target: {fileID: 592497741233027021, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10006
+      objectReference: {fileID: 0}
     - target: {fileID: 710889285344292914, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -16714,6 +16718,10 @@ PrefabInstance:
       propertyPath: Loop
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2789098083963882166, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10000
+      objectReference: {fileID: 0}
     - target: {fileID: 3031722533832820735, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -16744,7 +16752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6005895504361617766, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_Interpolate
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6005895504361617766, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_CollisionDetection
