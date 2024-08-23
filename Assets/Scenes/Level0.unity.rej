@@ -1,0 +1,12 @@
+diff a/Assets/Scenes/Level0.unity b/Assets/Scenes/Level0.unity	(rejected hunks)
+@@ -5091,8 +5091,8 @@
+       m_Calls: []
+   m_text: "\u65C5\u9014"
+   m_isRightToLeft: 0
+-  m_fontAsset: {fileID: 11400000, guid: 6e9e5a7e5bdc7c047bf2d3c18c897015, type: 2}
+-  m_sharedMaterial: {fileID: 6914280057374206890, guid: 6e9e5a7e5bdc7c047bf2d3c18c897015, type: 2}
++  m_fontAsset: {fileID: 11400000, guid: a5b56c1807f549e4f98f145cf50c133d, type: 2}
++  m_sharedMaterial: {fileID: 6120278715360946079, guid: a5b56c1807f549e4f98f145cf50c133d, type: 2}
+   m_fontSharedMaterials: []
+   m_fontMaterial: {fileID: 0}
+   m_fontMaterials: []

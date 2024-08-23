@@ -123,6 +123,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -359,7 +372,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Art_Winter_penguin_Tiny and Fat_0: -3848023689743044615
+      Art_Winter_penguin_Tiny and Fat_1: -1311829549596726887
+      Art_Winter_penguin_Tiny and Fat_2: 7917532054969299733
+      Art_Winter_penguin_Tiny and Fat_3: 2213756263750926952
+      Art_Winter_penguin_Tiny and Fat_4: -1589413307367973838
+      Art_Winter_penguin_Tiny and Fat_5: 1986236465247320749
+      Art_Winter_penguin_Tiny and Fat_6: -8152820551123156684
+      Art_Winter_penguin_Tiny and Fat_7: 681597112129260920
+      Art_Winter_penguin_Tiny and Fat_8: 6973987210898313065
+      Art_Winter_penguin_Tiny and Fat_9: 7978410789969915471
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

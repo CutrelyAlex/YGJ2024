@@ -129,6 +129,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -409,7 +422,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Art_Summer_Turtle_movement_0: 4541031630792741701
+      Art_Summer_Turtle_movement_1: -4590433563727509910
+      Art_Summer_Turtle_movement_10: 4689315609888474243
+      Art_Summer_Turtle_movement_11: -8378817332427812849
+      Art_Summer_Turtle_movement_2: -9111872302378041747
+      Art_Summer_Turtle_movement_3: 684961233046662969
+      Art_Summer_Turtle_movement_4: 2099212535256965129
+      Art_Summer_Turtle_movement_5: 2575576361429207743
+      Art_Summer_Turtle_movement_6: 2175978744915432980
+      Art_Summer_Turtle_movement_7: 8020658175898936735
+      Art_Summer_Turtle_movement_8: 1146976904065669933
+      Art_Summer_Turtle_movement_9: 5288237982259623083
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
