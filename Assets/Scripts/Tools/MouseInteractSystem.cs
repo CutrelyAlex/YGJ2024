@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class MouseInteractSystem : MonoBehaviour
 {
-    InputSystem_Actions action;
+    private InputSystem_Actions action;
     public GameObject onClickGameObject;
     public string InterableTag;
     private void Start()
