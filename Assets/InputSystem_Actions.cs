@@ -54,6 +54,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Mouse"",
+                    ""type"": ""Button"",
+                    ""id"": ""8089a747-7cab-4b01-a415-5182733751aa"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -120,6 +129,17 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Engine"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""19c5d006-4263-48bf-ad7b-6f0eac5953f1"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mouse"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -194,6 +214,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Gameplay_Move = m_Gameplay.FindAction("Move", throwIfNotFound: true);
         m_Gameplay_Brake = m_Gameplay.FindAction("Brake", throwIfNotFound: true);
         m_Gameplay_Engine = m_Gameplay.FindAction("Engine", throwIfNotFound: true);
+        m_Gameplay_Mouse = m_Gameplay.FindAction("Mouse", throwIfNotFound: true);
     }
 
     ~@InputSystem_Actions()
@@ -263,6 +284,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_Move;
     private readonly InputAction m_Gameplay_Brake;
     private readonly InputAction m_Gameplay_Engine;
+    private readonly InputAction m_Gameplay_Mouse;
     public struct GameplayActions
     {
         private @InputSystem_Actions m_Wrapper;
@@ -270,6 +292,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_Gameplay_Move;
         public InputAction @Brake => m_Wrapper.m_Gameplay_Brake;
         public InputAction @Engine => m_Wrapper.m_Gameplay_Engine;
+        public InputAction @Mouse => m_Wrapper.m_Gameplay_Mouse;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -288,6 +311,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Engine.started += instance.OnEngine;
             @Engine.performed += instance.OnEngine;
             @Engine.canceled += instance.OnEngine;
+            @Mouse.started += instance.OnMouse;
+            @Mouse.performed += instance.OnMouse;
+            @Mouse.canceled += instance.OnMouse;
         }
 
         private void UnregisterCallbacks(IGameplayActions instance)
@@ -301,6 +327,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Engine.started -= instance.OnEngine;
             @Engine.performed -= instance.OnEngine;
             @Engine.canceled -= instance.OnEngine;
+            @Mouse.started -= instance.OnMouse;
+            @Mouse.performed -= instance.OnMouse;
+            @Mouse.canceled -= instance.OnMouse;
         }
 
         public void RemoveCallbacks(IGameplayActions instance)
@@ -368,5 +397,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnBrake(InputAction.CallbackContext context);
         void OnEngine(InputAction.CallbackContext context);
+        void OnMouse(InputAction.CallbackContext context);
     }
 }

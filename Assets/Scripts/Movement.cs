@@ -24,8 +24,8 @@ public class Movement : Singleton<Movement>
 
     void InitAction()
     {
-        action = new InputSystem_Actions();
-
+        // action = new InputSystem_Actions();
+        action = InputSystem.Instance.action;
         // 移动输入处理（油门）
         action.Gameplay.Move.performed += context =>
         {
@@ -79,8 +79,6 @@ public class Movement : Singleton<Movement>
                 stoping = false;
             }
         };
-
-        action.Enable();
     }
 
     private void FixedUpdate()
