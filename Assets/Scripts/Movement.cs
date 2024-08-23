@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Movement : Singleton<Movement>
@@ -20,6 +21,7 @@ public class Movement : Singleton<Movement>
     
     public AudioClip audioEngine;
     public AudioSource audioSource;
+    private Coroutine engineCor;
     private void Start()
     {
         InitAction();
@@ -79,16 +81,24 @@ public class Movement : Singleton<Movement>
                 stoping = true;
                 speeding = false ;
             }
-            else
+            else if(!engineOn && engineCor == null)
             {
-                audioSource.clip = audioEngine;
-                audioSource.volume = 0.4f;
-                audioSource.Play();
-                engineOn = true;
-                stoping = false;
+               engineCor = StartCoroutine(StartEngine());
             }
         };
     }
+
+    IEnumerator StartEngine()
+    {
+        audioSource.clip = audioEngine;
+        audioSource.volume = 0.4f;
+        audioSource.Play();
+        yield return new WaitForSeconds(3f);
+        engineOn = true;
+        stoping = false;
+        yield return null;
+    }
+
 
     private void FixedUpdate()
     {

@@ -13,5 +13,6 @@ public class EndShow : MonoBehaviour
     {
         text.gameObject.SetActive(true);
         Movement.Instance.engineOn = false;
+        GuideSystem.Instance.guideText = " ";
     }
 }
