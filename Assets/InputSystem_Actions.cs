@@ -72,6 +72,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Any"",
+                    ""type"": ""Button"",
+                    ""id"": ""ec67c58d-1dba-484e-a0dd-ee0872148be1"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -162,6 +171,17 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""action"": ""Enter"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b30135d5-f22d-4897-94c9-b1117453d6df"",
+                    ""path"": ""<Keyboard>/anyKey"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Any"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -236,6 +256,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Gameplay_Engine = m_Gameplay.FindAction("Engine", throwIfNotFound: true);
         m_Gameplay_Mouse = m_Gameplay.FindAction("Mouse", throwIfNotFound: true);
         m_Gameplay_Enter = m_Gameplay.FindAction("Enter", throwIfNotFound: true);
+        m_Gameplay_Any = m_Gameplay.FindAction("Any", throwIfNotFound: true);
     }
 
     ~@InputSystem_Actions()
@@ -307,6 +328,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_Engine;
     private readonly InputAction m_Gameplay_Mouse;
     private readonly InputAction m_Gameplay_Enter;
+    private readonly InputAction m_Gameplay_Any;
     public struct GameplayActions
     {
         private @InputSystem_Actions m_Wrapper;
@@ -316,6 +338,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         public InputAction @Engine => m_Wrapper.m_Gameplay_Engine;
         public InputAction @Mouse => m_Wrapper.m_Gameplay_Mouse;
         public InputAction @Enter => m_Wrapper.m_Gameplay_Enter;
+        public InputAction @Any => m_Wrapper.m_Gameplay_Any;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -340,6 +363,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Enter.started += instance.OnEnter;
             @Enter.performed += instance.OnEnter;
             @Enter.canceled += instance.OnEnter;
+            @Any.started += instance.OnAny;
+            @Any.performed += instance.OnAny;
+            @Any.canceled += instance.OnAny;
         }
 
         private void UnregisterCallbacks(IGameplayActions instance)
@@ -359,6 +385,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Enter.started -= instance.OnEnter;
             @Enter.performed -= instance.OnEnter;
             @Enter.canceled -= instance.OnEnter;
+            @Any.started -= instance.OnAny;
+            @Any.performed -= instance.OnAny;
+            @Any.canceled -= instance.OnAny;
         }
 
         public void RemoveCallbacks(IGameplayActions instance)
@@ -428,5 +457,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         void OnEngine(InputAction.CallbackContext context);
         void OnMouse(InputAction.CallbackContext context);
         void OnEnter(InputAction.CallbackContext context);
+        void OnAny(InputAction.CallbackContext context);
     }
 }
