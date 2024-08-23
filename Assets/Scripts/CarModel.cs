@@ -7,10 +7,8 @@ public class CarModel : MonoBehaviour
     public Light2D FrontLight;
     public float backLightIntensity;
     public float frontLightIntensity;
-    Movement movement;
     private void Awake()
     {
-        movement = GetComponent<Movement>();
     }
     private void Update()
     {
@@ -19,7 +17,7 @@ public class CarModel : MonoBehaviour
 
     void LightUpdate()
     {
-        if (movement.braking && movement.engineOn)
+        if (Movement.Instance.braking && Movement.Instance.engineOn)
         {
             BackLight.intensity = backLightIntensity;
         }
@@ -28,7 +26,7 @@ public class CarModel : MonoBehaviour
             BackLight.intensity = 0.1f;
         }
 
-        if (movement.engineOn)
+        if (Movement.Instance.engineOn)
         {
             FrontLight.intensity = frontLightIntensity;
         }

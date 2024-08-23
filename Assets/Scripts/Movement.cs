@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class Movement : Singleton<Movement>
 {
     Rigidbody2D rb;
     InputSystem_Actions action;
