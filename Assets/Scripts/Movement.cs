@@ -16,6 +16,7 @@ public class Movement : Singleton<Movement>
     public Vector2 currentVector;
     public Vector2 targetVector;
 
+    public Animator animator;
     private void Start()
     {
         InitAction();
@@ -86,6 +87,11 @@ public class Movement : Singleton<Movement>
         CarMove();
     }
 
+    private void Update()
+    {
+        UpdateAnimation();
+    }
+
     void CarMove()
     {
         Vector2 newVelocity = currentVector;
@@ -108,5 +114,19 @@ public class Movement : Singleton<Movement>
         // 更新当前速度
         currentVector = newVelocity;
         rb.linearVelocity = currentVector;
+    }
+
+    void UpdateAnimation()
+    {
+        animator.speed = rb.linearVelocity.magnitude / maxSpeed;
+            
+        if (rb.linearVelocity.magnitude / maxSpeed > 0)
+        {
+            animator.SetBool("Running", true);
+        }
+        else
+        {
+            animator.SetBool("Running", false);
+        }
     }
 }

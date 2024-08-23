@@ -21,7 +21,7 @@ public class GangInteract : MonoBehaviour, IInteract
         yield return new WaitForSeconds(3f) ;
         if (GuideSystem.Instance.guideText == text)
         {
-            GuideSystem.Instance.guideText = "";
+            GuideSystem.Instance.guideText = " ";
         }
         showing = false;
         yield return null;
