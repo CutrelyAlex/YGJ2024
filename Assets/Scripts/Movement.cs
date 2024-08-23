@@ -17,10 +17,15 @@ public class Movement : Singleton<Movement>
     public Vector2 targetVector;
 
     public Animator animator;
+    
+    public AudioClip audioEngine;
+    public AudioSource audioSource;
     private void Start()
     {
         InitAction();
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
+        audioSource.loop = false;
     }
 
     void InitAction()
@@ -65,7 +70,7 @@ public class Movement : Singleton<Movement>
             }
         };
 
-        // 油门启动
+        // 引擎启动
         action.Gameplay.Engine.performed += context =>
         {
             if(engineOn)
@@ -76,6 +81,9 @@ public class Movement : Singleton<Movement>
             }
             else
             {
+                audioSource.clip = audioEngine;
+                audioSource.volume = 0.4f;
+                audioSource.Play();
                 engineOn = true;
                 stoping = false;
             }
