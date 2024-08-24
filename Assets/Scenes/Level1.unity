@@ -900,18 +900,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.2900002
       objectReference: {fileID: 0}
-    - target: {fileID: 710889285344292914, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 710889285344292914, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 710889285344292914, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1184412778479108621, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_Name
       value: PlayPack
@@ -955,6 +943,10 @@ PrefabInstance:
     - target: {fileID: 1451172688066699377, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2332491386061139702, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
+      propertyPath: m_Volume
+      value: 0.405
       objectReference: {fileID: 0}
     - target: {fileID: 2332491386061139702, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_Resource
@@ -1960,7 +1952,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1000
+  m_SortingOrder: 1001
   m_Sprite: {fileID: 6268415165775861095, guid: 4d0c518002fdc1846bd9cec35814fcb3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2959,11 +2951,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 725772451348737996, guid: 142bab9d8b8db6243b7f0dbf26e2331b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 398.4
+      value: 360.71768
       objectReference: {fileID: 0}
     - target: {fileID: 725772451348737996, guid: 142bab9d8b8db6243b7f0dbf26e2331b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -42.2
+      value: -40.355965
       objectReference: {fileID: 0}
     - target: {fileID: 725772451348737996, guid: 142bab9d8b8db6243b7f0dbf26e2331b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3089,7 +3081,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -500
   m_Sprite: {fileID: 1168926902407322946, guid: c5d5db6de3976c643b738aa5048af3fe, type: 3}
   m_Color: {r: 0.7433963, g: 0.7433963, b: 0.7433963, a: 1}
   m_FlipX: 0
@@ -3227,7 +3219,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9999
+  m_SortingOrder: 1000
   m_Sprite: {fileID: 5131461394547859242, guid: a90c8e86c261e7f4a8d1b0277d503ab8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4534,7 +4526,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -600
   m_Sprite: {fileID: 1995770017878065752, guid: 483387917a587f848a648833c560e559, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5911,7 +5903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7a9e8aebd1953c43bcf62fd59b2269b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "\u5F88\u57CE\u5E02\u878D\u4E3A\u4E00\u4F53\u7684\u5761"
+  text: "\u548C\u57CE\u5E02\u878D\u4E3A\u4E00\u4F53\u7684\u5761"
   hasStayTime: 0
   stayTime: 0
 --- !u!1 &1607355605

@@ -20,9 +20,10 @@ public class FinalEnd : MonoBehaviour
         ºÚÄ».gameObject.SetActive(true);
         while(CarModel.Instance.BGM.volume > 0)
         {
-            CarModel.Instance.BGM.volume -= 0.1f;
-            yield return new WaitForSeconds(0.5f);
+            CarModel.Instance.BGM.volume -= 0.02f;
+            yield return new WaitForSeconds(0.1f);
         }
+        yield return new WaitForSeconds(3f);
         SceneManager.LoadScene(NextLevel);
         yield return null;
     }

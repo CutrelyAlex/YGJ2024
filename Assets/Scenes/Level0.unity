@@ -2594,22 +2594,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.32000017
       objectReference: {fileID: 0}
-    - target: {fileID: 710889285344292914, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 710889285344292914, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 710889285344292914, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 710889285344292914, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
-      propertyPath: m_SortingOrder
-      value: 32767
-      objectReference: {fileID: 0}
     - target: {fileID: 1184412778479108621, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_Name
       value: PlayPack

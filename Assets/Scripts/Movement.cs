@@ -80,6 +80,7 @@ public class Movement : Singleton<Movement>
                 engineOn = false;
                 stoping = true;
                 speeding = false ;
+                engineCor = null;
             }
             else if(!engineOn && engineCor == null)
             {
