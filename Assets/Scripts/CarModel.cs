@@ -13,10 +13,6 @@ public class CarModel : Singleton<CarModel>
     public bool apple = false;
     public GameObject objApple;
 
-    public AudioSource BGM;
-    public bool engineOned;
-
-
     protected override void Awake()
     {
         base.Awake();
@@ -31,11 +27,6 @@ public class CarModel : Singleton<CarModel>
     {
         LightUpdate();
         ModelUpdate();
-        if(!engineOned && Movement.Instance.engineOn)
-        {
-            engineOned = true;
-            BGM.Play();
-        }
     }
 
     private void ModelUpdate()

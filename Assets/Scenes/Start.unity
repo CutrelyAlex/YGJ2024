@@ -145,13 +145,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-<<<<<<< HEAD
   m_audioClip: {fileID: 8300000, guid: c0c48da7bfa83534784cb1225f276bd3, type: 3}
   m_Resource: {fileID: 8300000, guid: c0c48da7bfa83534784cb1225f276bd3, type: 3}
-=======
-  m_audioClip: {fileID: 8300000, guid: baedd909e26ac314c8903dcb6c6483ab, type: 3}
-  m_Resource: {fileID: 8300000, guid: baedd909e26ac314c8903dcb6c6483ab, type: 3}
->>>>>>> 8fa17d034dc298de814a931c0c8f5857c4d5f813
   m_PlayOnAwake: 1
   m_Volume: 0.408
   m_Pitch: 1
@@ -311,8 +306,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6e9e5a7e5bdc7c047bf2d3c18c897015, type: 2}
-  m_sharedMaterial: {fileID: 6914280057374206890, guid: 6e9e5a7e5bdc7c047bf2d3c18c897015, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 147f3da0dc1a56143800666844ba519a, type: 2}
+  m_sharedMaterial: {fileID: -5838374276239718251, guid: 147f3da0dc1a56143800666844ba519a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -572,7 +567,7 @@ PrefabInstance:
     - target: {fileID: 2993142578853122280, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 6e9e5a7e5bdc7c047bf2d3c18c897015, type: 2}
+      objectReference: {fileID: 11400000, guid: 147f3da0dc1a56143800666844ba519a, type: 2}
     - target: {fileID: 2993142578853122280, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_fontStyle
       value: 1
@@ -596,7 +591,7 @@ PrefabInstance:
     - target: {fileID: 2993142578853122280, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 6914280057374206890, guid: 6e9e5a7e5bdc7c047bf2d3c18c897015, type: 2}
+      objectReference: {fileID: -5838374276239718251, guid: 147f3da0dc1a56143800666844ba519a, type: 2}
     - target: {fileID: 2993142578853122280, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_enableAutoSizing
       value: 1
