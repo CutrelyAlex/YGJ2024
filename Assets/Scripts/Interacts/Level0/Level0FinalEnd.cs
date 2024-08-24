@@ -1,9 +1,9 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Level0FinalEnd : MonoBehaviour
 {
-    public GameObject ºÚÄ»;
     private void Start()
     {
         ºÚÄ».SetActive(false);
@@ -15,8 +15,7 @@ public class Level0FinalEnd : MonoBehaviour
 
     IEnumerator Final()
     {
-        ºÚÄ».SetActive (true);
-        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("Level1");
         yield return null;
     }
 }
