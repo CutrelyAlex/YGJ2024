@@ -8,7 +8,6 @@ public class InputSystem : Singleton<InputSystem>
         base.Awake();
         action = new InputSystem_Actions();
         action.Enable();
-        DontDestroyOnLoad(Instance);
     }
 
     void Update()
