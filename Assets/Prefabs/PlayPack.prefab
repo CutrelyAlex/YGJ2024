@@ -516,7 +516,6 @@ MonoBehaviour:
   frontLightIntensity: 1.7
   apple: 0
   objApple: {fileID: 3922816367881640166}
-  BGM: {fileID: 2332491386061139702}
 --- !u!60 &994449710911155112
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1327,7 +1326,7 @@ GameObject:
   - component: {fileID: 7695778828126629187}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
