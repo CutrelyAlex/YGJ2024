@@ -1,9 +1,12 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level0FinalEnd : MonoBehaviour
+public class FinalEnd : MonoBehaviour
 {
+    public string NextLevel;
+    public GameObject ºÚÄ»;
     private void Start()
     {
     }
@@ -14,7 +17,13 @@ public class Level0FinalEnd : MonoBehaviour
 
     IEnumerator Final()
     {
-        SceneManager.LoadScene("Level1");
+        ºÚÄ».gameObject.SetActive(true);
+        while(CarModel.Instance.BGM.volume > 0)
+        {
+            CarModel.Instance.BGM.volume -= 0.1f;
+            yield return new WaitForSeconds(0.5f);
+        }
+        SceneManager.LoadScene(NextLevel);
         yield return null;
     }
 }
