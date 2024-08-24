@@ -18,7 +18,7 @@ public class Level0Guider : MonoBehaviour
         }
         else if(guideProgress == 1 && Movement.Instance.braking)
         {
-            guideProgress++;
+            guideProgress = 999;
             GuideSystem.Instance.guideText = "用鼠标和物体进行交互";
         }
     }
