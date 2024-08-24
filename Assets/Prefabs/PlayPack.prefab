@@ -516,6 +516,7 @@ MonoBehaviour:
   frontLightIntensity: 1.7
   apple: 0
   objApple: {fileID: 3922816367881640166}
+  BGM: {fileID: 2332491386061139702}
 --- !u!60 &994449710911155112
 PolygonCollider2D:
   m_ObjectHideFlags: 0
