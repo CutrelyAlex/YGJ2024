@@ -6,7 +6,6 @@ public class Level0FinalEnd : MonoBehaviour
 {
     private void Start()
     {
-        ºÚÄ».SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
