@@ -496,7 +496,7 @@ MonoBehaviour:
   currentVector: {x: 0, y: 0}
   targetVector: {x: 0, y: 0}
   animator: {fileID: 8927995133107405715}
-  audioEngine: {fileID: 8300000, guid: fff62d4ae3a523a449d4d63c1b85ff49, type: 3}
+  audioEngine: {fileID: 8300000, guid: a53e9dd23e4dcaf478eb2cfd1fb73b43, type: 3}
   audioSource: {fileID: 0}
 --- !u!114 &4855181652006727059
 MonoBehaviour:
@@ -1198,8 +1198,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u6309G\u542F\u52A8\u53D1\u52A8\u673A"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 147f3da0dc1a56143800666844ba519a, type: 2}
-  m_sharedMaterial: {fileID: -5838374276239718251, guid: 147f3da0dc1a56143800666844ba519a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6e9e5a7e5bdc7c047bf2d3c18c897015, type: 2}
+  m_sharedMaterial: {fileID: 6914280057374206890, guid: 6e9e5a7e5bdc7c047bf2d3c18c897015, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

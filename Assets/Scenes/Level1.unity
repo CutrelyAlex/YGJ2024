@@ -391,7 +391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6928479834849020211, guid: 1a4399140be87ac498671b65ba519027, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.192
+      value: -8.18
       objectReference: {fileID: 0}
     - target: {fileID: 6928479834849020211, guid: 1a4399140be87ac498671b65ba519027, type: 3}
       propertyPath: m_LocalPosition.y
@@ -957,8 +957,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2332491386061139702, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: dd4d6804112707645853050495a71232, type: 3}
+    - target: {fileID: 2332491386061139702, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: dd4d6804112707645853050495a71232, type: 3}
+    - target: {fileID: 2332491386061139702, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2993142578853122280, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: m_text
@@ -968,9 +976,25 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 72
       objectReference: {fileID: 0}
+    - target: {fileID: 2993142578853122280, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 6e9e5a7e5bdc7c047bf2d3c18c897015, type: 2}
+    - target: {fileID: 2993142578853122280, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2993142578853122280, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6914280057374206890, guid: 6e9e5a7e5bdc7c047bf2d3c18c897015, type: 2}
+    - target: {fileID: 2993142578853122280, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3471601945982944836, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: maxSpeed
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4855181652006727059, guid: e58ead798db5ad74685076df0c7b5918, type: 3}
       propertyPath: apple
