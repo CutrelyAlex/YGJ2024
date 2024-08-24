@@ -9,12 +9,11 @@ public class MouseInteractSystem : MonoBehaviour
     private void Start()
     {
         action = new InputSystem_Actions();
-        action.Gameplay.Enable();  // 启用输入动作映射
-
         action.Gameplay.Mouse.performed += context =>
         {
             onClickGameObject = ClickGameObject();
         };
+        action.Gameplay.Enable();  // 启用输入动作映射
     }
 
     private void Update()
@@ -37,5 +36,4 @@ public class MouseInteractSystem : MonoBehaviour
         }
         return null;
     }
-
 }
